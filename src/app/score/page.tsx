@@ -1,7 +1,8 @@
-import dynamic from "next/dynamic";
-
-const PDFViewer = dynamic(() => import("./../component/pdfViewer"), { ssr: false });
-
 export default function Home() {
-    return <PDFViewer fileUrl="/sample2.pdf" />;
-}
+    return (
+      <div>
+        <iframe src="/sample2.pdf" />
+      </div>
+    );
+  }
+  
